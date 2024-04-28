@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4345716091554130930
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1999628579082987652, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999628579082987652, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999628579082987652, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999628579082987652, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999628579082987652, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999628579082987652, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999628579082987652, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999628579082987652, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999628579082987652, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999628579082987652, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712596770746647493, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      propertyPath: managedReferences[7888600671614402571]._value
+      value: 
+      objectReference: {fileID: 1586381677810944441, guid: cd9dc58437ba54c44b25402ff91aca88,
+        type: 3}
+    - target: {fileID: 8457444051872364791, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      propertyPath: m_Name
+      value: WorldScene Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -9061347359234899913, guid: 4ea8fc71d0d33aa4794e860bd8a9318a, type: 3}
+    - {fileID: -2081337499640431481, guid: 4ea8fc71d0d33aa4794e860bd8a9318a, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8457444051872364791, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8648379890700696445}
+    - targetCorrespondingSourceObject: {fileID: 8457444051872364791, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5587572495267894683}
+  m_SourcePrefab: {fileID: 100100000, guid: 4ea8fc71d0d33aa4794e860bd8a9318a, type: 3}
+--- !u!1 &5265259150306169605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8457444051872364791, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4345716091554130930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8648379890700696445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5265259150306169605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -518696070, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: f301225243efa27479ec38fb4dd5ffab, type: 3}
+  _properties:
+  - Property: {fileID: -6388145239457764025, guid: f301225243efa27479ec38fb4dd5ffab,
+      type: 3}
+    Value:
+      rid: 2784359891209028135
+  - Property: {fileID: -5508206028346320178, guid: f301225243efa27479ec38fb4dd5ffab,
+      type: 3}
+    Value:
+      rid: 2784359891209028136
+  - Property: {fileID: -2601491295754733624, guid: f301225243efa27479ec38fb4dd5ffab,
+      type: 3}
+    Value:
+      rid: 2784359891209028137
+  - Property: {fileID: 1971311750349719238, guid: f301225243efa27479ec38fb4dd5ffab,
+      type: 3}
+    Value:
+      rid: 2784359891209028138
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  m_movementIndicator: {fileID: 7025435918243807456, guid: 5dfae8e2eae84f140b64b0e4cfcbcfe8,
+    type: 3}
+  m_longPressSound: {fileID: 11400000, guid: 25625e178d869405c92bfc4024612fb9, type: 2}
+  m_footstepWalkSound: {fileID: 11400000, guid: 06f9d1665c501494cab2fabb8d9c0d4e,
+    type: 2}
+  m_footstepRunSound: {fileID: 11400000, guid: 264793f51d6488647abe8a49a72e9487, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2784359891209028135
+      type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 7025435918243807456, guid: 5dfae8e2eae84f140b64b0e4cfcbcfe8,
+          type: 3}
+    - rid: 2784359891209028136
+      type: {class: AudioShaderGlue/AudioShaderLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 11400000, guid: 25625e178d869405c92bfc4024612fb9, type: 2}
+    - rid: 2784359891209028137
+      type: {class: AudioShaderGlue/AudioShaderLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 11400000, guid: 06f9d1665c501494cab2fabb8d9c0d4e, type: 2}
+    - rid: 2784359891209028138
+      type: {class: AudioShaderGlue/AudioShaderLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 11400000, guid: 264793f51d6488647abe8a49a72e9487, type: 2}
+--- !u!114 &-5587572495267894683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5265259150306169605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1450553937, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: 88de721fb90843944b4f498ca102c1b3, type: 3}
+  _properties:
+  - Property: {fileID: -2695117827799385001, guid: 88de721fb90843944b4f498ca102c1b3,
+      type: 3}
+    Value:
+      rid: 2784359891209028139
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  m_characterPrefab: {fileID: 3123393570936088168, guid: 257a642d7e8bdee4fb0dd92a56ff9b1b,
+    type: 3}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2784359891209028139
+      type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 3123393570936088168, guid: 257a642d7e8bdee4fb0dd92a56ff9b1b,
+          type: 3}
