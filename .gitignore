@@ -62,8 +62,8 @@ sysinfo.txt
 *.app
 
 Teddy/Library
-
-
+Teddy/temp
+Teddy/Logs
 
 
 
