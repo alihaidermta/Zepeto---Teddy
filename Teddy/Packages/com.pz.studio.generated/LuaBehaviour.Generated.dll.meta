@@ -44,6 +44,8 @@ PluginImporter:
       type: 3}
     Highrise.Lua.Generated.SceneLoader: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
+    Highrise.Lua.Generated.UINewView: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
+      type: 3}
   executionOrder: {}
   defineConstraints: []
   isPreloaded: 0
