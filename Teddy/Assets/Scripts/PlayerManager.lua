@@ -78,23 +78,7 @@ local function findMaxKey(tbl)
 
     return maxKey
 end
-function GamePlayInit_Func()
-    Panel_GameplayInit.SetActive(Panel_GameplayInit, true)
-    print("timer print hua hy ")
-    local newTimer = Timer.new(5, function() Panel_GameplayInit.SetActive(Panel_GameplayInit, false) end, false)
-end
 
-function Won_Func()
-    WonPanel.SetActive(WonPanel, true)
-    print("timer print hua hy ")
-    local newTimer = Timer.new(3, function() WonPanel.SetActive(WonPanel, false) end, false)
-end
-
-function Loose_Func()
-    LoosePanel.SetActive(LoosePanel, true)
-    print("timer print hua hy ")
-    local newTimer = Timer.new(3, function() LoosePanel.SetActive(LoosePanel, false) end, false)
-end
 --[[
 
     Client
@@ -180,8 +164,7 @@ function self:ClientStart() --Moved the Destroy functions to Start since we need
 
     print("Client start")
     
-    GamePlayInit_Func()
-  
+    
     --DestroyPlayer() destroy and respawn a player after they are beaten in a collision
     function DestroyPlayer(victim) -- We dont want destroy the one who calls it because that will be the winner of the collision, so we need to pass a paramater
         destroyPlayerRequest:FireServer(victim) -- Pass a paramater through the event

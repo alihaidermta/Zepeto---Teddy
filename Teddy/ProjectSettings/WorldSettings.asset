@@ -20,7 +20,7 @@ MonoBehaviour:
     type: 3}
   _uiFactory: {fileID: -2017830929143987780, guid: a11bdf670bfa5bd48a85b6b8b14a24a1,
     type: 3}
-  _hideVirtualPlayerScenes: 1
+  _hideVirtualPlayerScenes: 0
   _scenes:
   - Name: Room
     Scene: {fileID: 102900000, guid: 3d97b014f52721147ba461f2a8133078, type: 3}

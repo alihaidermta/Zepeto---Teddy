@@ -19,9 +19,9 @@ function self:OnTriggerEnter(collider)
     print("agent trigger ho gya ")
     if(collider.tag == "agent") then
         print("agent trigger ho gya ")
-        playerManagerScript.Loose_Func()
+       
         Object.Destroy(self.gameObject)
-        particles.Play(particles, true)
+        
     end
 
 
