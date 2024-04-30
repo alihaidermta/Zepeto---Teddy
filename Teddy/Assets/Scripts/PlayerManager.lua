@@ -4,6 +4,12 @@ local EnergyOrb : GameObject = nil
 local LightningEffect : GameObject = nil
 --!SerializeField
 local Camera : GameObject = nil
+--!SerializeField
+local Panel_GameplayInit : GameObject = nil
+--!SerializeField
+local WonPanel : GameObject = nil
+--!SerializeField
+local LoosePanel : GameObject = nil
 
 local character = client.localPlayer.character
 addEnergyRequest = Event.new("AddEnergyRequest")
@@ -17,6 +23,10 @@ respawnRadius = 35 -- Max distance from the center to respawn after being destro
 players = {}
 playerPowers = {}
 kingKaiju = nil
+
+
+
+
 
 
 local function TrackPlayers(game, characterCallback)
@@ -68,7 +78,23 @@ local function findMaxKey(tbl)
 
     return maxKey
 end
+function GamePlayInit_Func()
+    Panel_GameplayInit.SetActive(Panel_GameplayInit, true)
+    print("timer print hua hy ")
+    local newTimer = Timer.new(5, function() Panel_GameplayInit.SetActive(Panel_GameplayInit, false) end, false)
+end
 
+function Won_Func()
+    WonPanel.SetActive(WonPanel, true)
+    print("timer print hua hy ")
+    local newTimer = Timer.new(3, function() WonPanel.SetActive(WonPanel, false) end, false)
+end
+
+function Loose_Func()
+    LoosePanel.SetActive(LoosePanel, true)
+    print("timer print hua hy ")
+    local newTimer = Timer.new(3, function() LoosePanel.SetActive(LoosePanel, false) end, false)
+end
 --[[
 
     Client
@@ -80,6 +106,7 @@ function self:ClientAwake()
         local player = playerinfo.player
         local character = player.character
         print("Client awake")
+       
         --The function to run everytime someones power level changes to sync up scores and scales
         playerinfo.power.Changed:Connect(function(powerLevel, oldVal)
             local newScale = 1 + (powerLevel * .01) -- Scale is always 1 + the power level factored by .01
@@ -151,6 +178,7 @@ function self:ClientStart() --Moved the Destroy functions to Start since we need
 
     local CamScript = Camera:GetComponent("CameraController")
     print("Client start")
+    GamePlayInit_Func()
     --DestroyPlayer() destroy and respawn a player after they are beaten in a collision
     function DestroyPlayer(victim) -- We dont want destroy the one who calls it because that will be the winner of the collision, so we need to pass a paramater
         destroyPlayerRequest:FireServer(victim) -- Pass a paramater through the event
@@ -163,7 +191,7 @@ function self:ClientStart() --Moved the Destroy functions to Start since we need
         local groupPosition = victim.character.transform.position
         local groupRadius = energyToSpawn * .2
         spawnEnergyGroup(energyToSpawn, groupRadius, groupPosition)
-
+       
 
         -- Dont actually Destroy the character, just disable, respawn, and reenable them with a reset power level
         victim.character.gameObject:SetActive(false)
@@ -189,7 +217,7 @@ end
 function self:ServerAwake()
     TrackPlayers(server)
     print("server start")
-  
+    
     addEnergyRequest:Connect(function(player, amount) -- Here the player is just the client that sent the request to the server, so when AddEnergy() is called it gives energy to whoever calls it
         local playerInfo = players[player]
         local playerPower = playerInfo.power.value

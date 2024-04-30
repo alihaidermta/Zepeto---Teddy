@@ -4908,7 +4908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3190288019321694129}
   - component: {fileID: 3956709917050095802}
-  - component: {fileID: 4739486671361022545}
+  - component: {fileID: -8668821212899198665}
   m_Layer: 0
   m_Name: LightningEffect
   m_TagString: Untagged
@@ -5029,7 +5029,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4739486671361022545
+--- !u!114 &-8668821212899198665
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5038,7 +5038,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4551650969690558318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -173044334, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
+  m_Script: {fileID: -1747929100, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _networkId: 0
@@ -5047,11 +5047,17 @@ MonoBehaviour:
   - Property: {fileID: -440792511207266995, guid: 87508c667ff3fa842a7a84eb6d863820,
       type: 3}
     Value:
-      rid: 2696219399232946193
+      rid: 2784359950648868936
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  m_lifeTime: 5
   references:
     version: 2
     RefIds:
-    - rid: 2696219399232946193
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2784359950648868936
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 5
