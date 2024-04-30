@@ -106,7 +106,7 @@ function self:ClientAwake()
         local player = playerinfo.player
         local character = player.character
         print("Client awake")
-       
+        
         --The function to run everytime someones power level changes to sync up scores and scales
         playerinfo.power.Changed:Connect(function(powerLevel, oldVal)
             local newScale = 1 + (powerLevel * .01) -- Scale is always 1 + the power level factored by .01
@@ -177,8 +177,11 @@ end
 function self:ClientStart() --Moved the Destroy functions to Start since we need to use GetComponent on an outside object to reset the camera
 
     local CamScript = Camera:GetComponent("CameraController")
+
     print("Client start")
+    
     GamePlayInit_Func()
+  
     --DestroyPlayer() destroy and respawn a player after they are beaten in a collision
     function DestroyPlayer(victim) -- We dont want destroy the one who calls it because that will be the winner of the collision, so we need to pass a paramater
         destroyPlayerRequest:FireServer(victim) -- Pass a paramater through the event
@@ -204,6 +207,7 @@ function self:ClientStart() --Moved the Destroy functions to Start since we need
         --Center the Camera on the player after Respawn
         if(victim == client.localPlayer)then
             CamScript.CenterOn(pos)
+            
         end 
     end)
 end
