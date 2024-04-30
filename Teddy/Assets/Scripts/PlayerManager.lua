@@ -28,7 +28,6 @@ kingKaiju = nil
 
 
 
-
 local function TrackPlayers(game, characterCallback)
     scene.PlayerJoined:Connect(function(scene, player)
         players[player] = {
@@ -47,7 +46,7 @@ local function TrackPlayers(game, characterCallback)
             if(player.id==1)then
                 character.name="Agent"
                 character.tag="agent"
-                
+              
             end
 
             if characterCallback then
